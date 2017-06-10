@@ -1,0 +1,142 @@
+.content {
+  padding:5px;
+  margin:0 auto;
+  max-width:100%;
+  margin-top:100px;
+}
+
+.content_container {
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  margin:  0 10px;
+}
+
+.content_product {
+  padding:10px;
+}
+
+.content_product-detail_page {
+  padding-top:20px;
+}
+
+.content_product > header {
+  flex:1;
+  font-size:24px;
+  margin-bottom:24px;
+}
+
+.content_product > main {
+  display:flex;
+  flex-direction: column;
+}
+
+.content_image {
+  flex:1;
+  padding-right:10px;
+}
+
+.content_details {
+  flex:1;
+  padding:10px;
+  border:solid lightgray 1px;
+  border-radius:5px;
+}
+
+.image_overview {
+  width: 100%;
+
+}
+.title_head{
+  color: #2c3e50;
+  font-size: 300%;
+  line-height: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+.mainbase .more {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+.price {
+  font-size: 200%;
+}
+
+.products_container {
+  display:flex;
+  flex-wrap:wrap;
+  margin-top:100px;
+}
+
+.mainbase:hover .more {
+    visibility: visible;
+}
+
+.pagination > a {
+  border-radius:3px;
+  display:inline-block;
+  color:#fff;
+  padding:10px 20px 10px 20px;
+  border:solid #2C3E50 1px;
+  background-color:#1ABC9C;
+  margin-left:10px;
+}
+
+.pagination > a:not(:first-of-type) {
+  margin-left:10px;
+}
+
+/* Media for tablets */
+@media only screen and (min-width: 850px) {
+  .content_container {
+    flex-direction: row;
+    flex-wrap:wrap;
+  }
+
+  .content_product > main {
+    display:flex;
+    flex-direction: row;
+  }
+
+  .content_container-small {
+    max-width:800px;
+    margin:0 auto;
+  }
+  .title_head{
+
+    font-size: 150%;
+  }
+
+}
+
+
+/* Media for desktops -content*/
+@media only screen and (min-width: 1200px) {
+  .content {
+    width:1200px;
+    padding:0;
+  }
+  .image_overview {
+    max-width: 300px;
+    height: 250px;
+  }
+  .content_container{
+    text-align: left;
+
+  }
+  .content_product{
+    margin-bottom: 15px;
+  }
+}

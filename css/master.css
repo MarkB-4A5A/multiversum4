@@ -1,0 +1,56 @@
+/*
+Main CSS3 file for github.LuukHorsman.com
+Making sure that I make this mobile first ;)
+*/
+
+/*Including the header part of the website*/
+@import url('header.css');
+
+/*Including the button part of the website*/
+@import url('buttons.css');
+
+/*Including the main conent part of the website*/
+@import url('content.css');
+
+/*Including the section for the shopping cart*/
+@import url('cart.css');
+
+/*Including the grid*/
+@import url('grid.css');
+
+@import url('products.css');
+
+/*Making the body ready for the page*/
+body {
+    margin:0;
+    padding:0;
+    left:0;
+    right:0;
+    height:2000px;
+    font-size:16px;
+    /*Making sure that the line-height is equal to 1.5 * font-size*/
+    line-height:24px;
+}
+
+/*Making sure that the h1, h2, h3 etc are the equal to the font-size and line-height*/
+h1 {font-size:36px; line-height:48px; margin:0;}
+h2, h3, h4, h5 {margin:0;}
+
+/*remove all the borders if the user selects(focus) them*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/* Media for tablets */
+@media only screen and (min-width: 600px) {
+
+}
+
+
+/* Media for desktops */
+@media only screen and (min-width: 768px) {
+
+}

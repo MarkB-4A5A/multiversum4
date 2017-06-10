@@ -1,0 +1,25 @@
+AuthName "products"
+AuthType Basic
+AuthUserFile C:/xampp/htdocs/products/products.htpasswd
+require valid-user
+
+php_value date.timezone "Europe/Amsterdam"
+
+<IfModule mod_rewrite.c>
+<IfModule mod_dir.c>
+  DirectoryIndex index.php index.html index.htm default.htm default.html default.asp /index.php
+</IfModule>
+
+RewriteEngine on
+
+RewriteBase /products
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+
+
+RewriteRule ^(.*)$ index.php?url=$1 [L]
+
+
+</IfModule>
